@@ -11,9 +11,16 @@ negative=1
 
 @app.route("/")
 def index():
-    data['reviews']=reviews
-    data['positive']= positive
-    data['negative']=negative
+    data['reviews'] = reviews
+    data['positive'] = positive
+    data['negative'] = negative
+
+# @app.route("/")
+# def index():
+    # data['reviews']=reviews
+    # data['positive']= positive
+    # data['negative']=negative
+    
     return render_template('index.html',data=data)
 
 
